@@ -15,7 +15,7 @@ app.get("/subscribe", (c) => {
   const body = new ReadableStream({
     start(controller) {
       clients.set(clientId, controller);
-      controller.enqueue(new TextEncoder().encode("Client connected...\n"));
+      controller.enqueue(new TextEncoder().encode(`count: ${count}\n`));
     },
     cancel() {
       clients.delete(clientId);
