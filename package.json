@@ -1,0 +1,13 @@
+{
+  "name": "stream-hono-vercel",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "hono": "^3.5.4"
+  },
+  "devDependencies": {
+    "vercel": "^29.1.1"
+  }
+}
